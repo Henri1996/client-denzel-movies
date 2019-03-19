@@ -15,7 +15,7 @@ class fetchApi extends Component {
       }
   componentDidMount(){
 
-    fetch('https://denzel-movies-back.netlify.com/.netlify/functions/server/movies/populate')
+    fetch('http://localhost:9292/movie/populate')
     .then(res => res.json())
     .then(json =>{
         this.setState({
