@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import GetOneMovie from './mesCompo/OneMovie';
+import GetTenMovie from './mesCompo/TenMovie';
 import logo from './logo.svg';
 import './App.css';
-
+import LambdaDemo from './mesCompo/LambdaDemo';
 
 
 class App extends Component {
@@ -10,9 +10,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="text-center title">10 ramdom movies from the Denzel's best movies :</h1>
-        <p>henri</p>
-      <br></br><br></br>
-      <GetOneMovie/>
+        
+      <br></br>
+      <LambdaDemo/>
+      <br></br>
+      <GetTenMovie/>
+      
       </div>
     );
   }

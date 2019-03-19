@@ -5,7 +5,7 @@ const obj = {
 export function handler(event, context, callback) {
   console.log('queryStringParameters', event.queryStringParameters);
   callback(null, {
-    statusCode: 200,
+    statusCode: 200,//sjjsk
     body: JSON.stringify({ msg: 'Hello, World!', ...obj })
   });
 }

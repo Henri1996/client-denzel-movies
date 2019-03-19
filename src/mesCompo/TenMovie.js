@@ -56,7 +56,7 @@ class OneMovie extends Component {
         
         
           
-          <CardDeck>
+      <CardDeck>
       <Card>
         <CardImg top width="100%" src={item[r].poster} alt="Card image cap" />
         <CardBody>
