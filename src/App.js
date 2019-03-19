@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="text-center title">10 ramdom movies from the Denzel's best movies :</h1>
-      
+        <p>henri</p>
       <br></br><br></br>
       <GetOneMovie/>
       </div>
