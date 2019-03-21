@@ -25,7 +25,7 @@ class GetOneMovie extends Component {
         if(!myBool)
         {
       return (
-          <div>
+          <div className="App-card"> 
         <Button  color = "primary" size="lg" onClick={()=>this.ReturnF()}>
         Return
       </Button>{' '}

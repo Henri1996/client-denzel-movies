@@ -84,7 +84,7 @@ ReturnF()
           <CardSubtitle>Rate :{item[r2].rating}</CardSubtitle>
 
           <CardText>{item[r2].synopsis}</CardText>
-          <Button>Button</Button>
+          <Button href={item[r2].link}>View site</Button>
         </CardBody>
       </Card>
       <Card>
@@ -94,7 +94,7 @@ ReturnF()
         <CardSubtitle>Rate : {item[r3].rating}</CardSubtitle>
 
           <CardText>{item[r3].synopsis}</CardText>
-          <Button>Button</Button>
+          <Button href={item[r3].link}>View site</Button>
         </CardBody>
       </Card>
       <Card>
@@ -103,8 +103,7 @@ ReturnF()
         <CardTitle>{item[r4].title}</CardTitle>
         <CardSubtitle>Rate : {item[r4].rating}</CardSubtitle>
           <CardText>{item[r4].synopsis}</CardText>
-          <Button>Button</Button>
-        </CardBody>
+          <Button href={item[r4].link}>View site</Button>        </CardBody>
       </Card>
     </CardDeck>
     <br/>
@@ -116,8 +115,7 @@ ReturnF()
         <CardSubtitle>Rate : {item[r5].rating}</CardSubtitle>
 
           <CardText>{item[r5].synopsis}</CardText>
-          <Button>Button</Button>
-        </CardBody>
+          <Button href={item[r5].link}>View site</Button>        </CardBody>
       </Card>
       <Card>
         <CardImg top width="100%" src= {item[r6].poster} alt="Card image cap" />
@@ -126,8 +124,7 @@ ReturnF()
         <CardSubtitle>Rate : {item[r6].rating}</CardSubtitle>
 
           <CardText>{item[r6].synopsis}</CardText>
-          <Button>Button</Button>
-        </CardBody>
+          <Button href={item[r6].link}>View site</Button>        </CardBody>
       </Card>
       <Card>
         <CardImg top width="100%" src={item[r7].poster} alt="Card image cap" />
@@ -136,7 +133,7 @@ ReturnF()
 
         <CardSubtitle>Rate : {item[r7].rating}</CardSubtitle>
           <CardText>{item[r7].synopsis}</CardText>
-          <Button href={item[r7].link}>Web site</Button>
+          <Button href={item[r7].link}>View site</Button>
           
         </CardBody>
       </Card>
@@ -147,8 +144,7 @@ ReturnF()
         <CardSubtitle>Rate : {item[r8].rating}</CardSubtitle>
           <CardText>{item[r8].synopsis}</CardText>
           
-          <Button>Button</Button>
-        </CardBody>
+          <Button href={item[r8].link}>View site</Button>        </CardBody>
       </Card>
       
     </CardDeck>
