@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button , CardDeck} from 'reactstrap';
+import App from '../App';
 
 function getRandomNumber(max)
 {
@@ -15,6 +16,7 @@ class OneMovie extends Component {
         this.state = {
           item : [],
           isLoaded: false,
+          rtrn: false,
           randomN:[],
         }
       }
@@ -33,8 +35,14 @@ class OneMovie extends Component {
     )
 
 }
+ReturnF()
+{
+  this.setState(
+    {rtrn : true}
+  )
+}
   render() {
-    var { isLoaded , item} = this.state
+    var { isLoaded , item,rtrn} = this.state
 
     if(!isLoaded){
       return <div>Loading....</div>
@@ -50,11 +58,14 @@ class OneMovie extends Component {
         var r8 = getRandomNumber(56);
         
 
-
+    if(!rtrn)
+    {
     return (
       <div>
         
-        
+        <Button  color = "primary" size="lg" onClick={()=>this.ReturnF()}>
+        Return
+      </Button>{' '}
           
       <CardDeck>
       <Card>
@@ -143,6 +154,9 @@ class OneMovie extends Component {
         </div>
     );
   }
+  else{
+    return (<App/>)
   }
-}
+  }
+}}
 export default OneMovie;

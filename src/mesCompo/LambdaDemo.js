@@ -14,6 +14,7 @@ class LambdaDemo extends Component {
       fetch('https://denzel-movies-back.netlify.com/.netlify/functions/server/' + api)
         .then(response => response.json())
         .then(json => this.setState({ loading:false ,msg: json}));
+        
     };
   
     render() {
@@ -26,7 +27,7 @@ class LambdaDemo extends Component {
             {loading ? 'Loading...' : 'Un film aléatoire ...'}
           </Button>
           <br />
-          <span>{msg.title } </span>
+          <b>{msg.title } </b>
           <span>{msg.rating } </span>
           <br/>
           <span>{msg.synopsis } </span>
