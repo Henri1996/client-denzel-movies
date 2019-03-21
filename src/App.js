@@ -38,7 +38,7 @@ class App extends Component {
       console.log("je suis passé ")
       return (
         <div className="App">
-        <h1 className="display-2">Denzel Washigton</h1>
+        <h1 className="display-2">Denzel Washington</h1>
         <br></br>
       <Button  color = "primary" size="lg" onClick={()=>this.oneMovieF()}>
         Get one random's movies

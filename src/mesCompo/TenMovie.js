@@ -107,6 +107,7 @@ ReturnF()
         </CardBody>
       </Card>
     </CardDeck>
+    <br/>
     <CardDeck>
       <Card>
         <CardImg top width="100%" src={item[r5].poster} alt="Card image cap" />
